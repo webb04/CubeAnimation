@@ -33,9 +33,7 @@
 					box-shadow: inset 0px 0px 100px #555;
 				}
 
-				.cube div p{
-					/*margin-top: 70px;
-					font-size: 48px;*/
+				.cube div p {
 					width: 64px;
 					height: 64px;
 					border: solid white 1px;
@@ -50,27 +48,31 @@
 				.back {
 					transform: translateZ(-100px) rotateY(180deg);
 				}
+				
 				.right {
 					transform: rotateY(-270deg) translateX(100px);
 					transform-origin: top right;
 				}
+				
 				.left {
 					transform: rotateY(270deg) translateX(-100px);
 					transform-origin: center left;
 				}
+				
 				.top {
 					transform: rotateX(-90deg) translateY(-100px);
 					transform-origin: top center;
 				}
+				
 				.bottom {
 					transform: rotateX(90deg) translateY(100px);
 					transform-origin: bottom center;
 				}
+				
 				.front {
 					transform: translateZ(100px);
 				}
 
-				/* Chrome, Safari, Opera */
 				@-webkit-keyframes mymove {
 				    	from { transform: rotateY(0); }
 					to { transform: rotateY(360deg); }
@@ -83,7 +85,7 @@
 				}
 
 				.cube, .shadow {
-					-webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+				-webkit-animation: mymove 10s infinite;
 				  animation: mymove 10s infinite;
 				}
 
@@ -114,7 +116,6 @@
 				}
 
 				.row {
-					/*height: 33.3333%;*/
 					height: 66.6666px;
 					width: 100%;
 					border: solid white 1px;
@@ -138,7 +139,6 @@
 		<div class="wrap">
 			<div class="cube">
 				<div class="front">
-					<!-- <p>Front</p> -->
 					<div class="row">
 						<div class="block"></div>
 						<div class="block"></div>
